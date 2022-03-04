@@ -3,7 +3,7 @@ import React from 'react'
 function SidebarOptions() {
   return (
     <div>
-        hello from sidebaroptions
+        hello from sidebar options section
     </div>
   )
 }
