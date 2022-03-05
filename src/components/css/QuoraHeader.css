@@ -189,7 +189,7 @@
     align-items: center;
   }
   
-  .modal__buttons > .cancle {
+  .modal__buttons > .cancel {
     margin-top: 10px;
     border: none;
     outline: none;
@@ -200,7 +200,7 @@
     cursor: pointer;
   }
   
-  .modal__buttons > .cancle:hover {
+  .modal__buttons > .cancel:hover {
     color: red;
   }
   
