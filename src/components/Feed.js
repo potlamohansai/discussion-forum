@@ -1,9 +1,11 @@
 import React from 'react'
+import QuoraBox from './QuoraBox'
+import './css/Feed.css'
 
 function Feed() {
   return (
-    <div>
-        from Feed
+    <div className='feed'>
+        <QuoraBox/>
     </div>
   )
 }
