@@ -11,7 +11,6 @@ function Widget() {
         <div className='widget__contents'>
           <WidgetContent/>
         </div>
-      
     </div>
   )
 }

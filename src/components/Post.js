@@ -38,7 +38,7 @@ function Post() {
           },
         }}
         >
-          <div classname='modal__question'>
+          <div className='modal__question'>
             <h1>This is test question.</h1>
             <p>asked by <span className="name">Username</span> on {""}
             <span className="name">timestamp</span>
@@ -115,6 +115,7 @@ function Post() {
             </div>
             <div className='post-answer'>This is test answer</div>
           </div>
+         
         </div>
     </div>
   )
