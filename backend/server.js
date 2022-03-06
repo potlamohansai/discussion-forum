@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('express');
 const cors = require('cors')
 const path= require('path')
 const app = express()
@@ -18,8 +18,8 @@ app.use(bodyParser.urlencoded({ extended: true, limit: "50mb"}))
 
 //cors
 app.use((req, res, next) => {
-    req.headers("Access-Control-Allow-Origin", "*")
-    req.headers("Access-Control-Allow-Headers", "*")
+    req.header("Access-Control-Allow-Origin", "*")
+    req.header("Access-Control-Allow-Headers", "*")
     next()
 })
 
@@ -32,7 +32,7 @@ app.use('/uploads', express.static(path.join(__dirname, "/../frontend/uploads"))
 
 app.get("*", (req, res) => {
     try{
-        res.sendFile(path.join(`${__dirname}/../frontend/build/index.html`))
+        res.sendFile(path.join(`${__dirname}/../frontend/build/index.html`));
     }catch (e)  {
         res.send("Oops! unexpected error")
     }
