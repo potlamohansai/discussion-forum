@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const AnswerSchema = new mongoose.Schema({
-    answerName: String,
+    answer: String,
     questionId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "questions"
@@ -13,4 +13,4 @@ const AnswerSchema = new mongoose.Schema({
     
 })
 
-module.exports = mongoose.model("Questions", AnswerSchema);
+module.exports = mongoose.model("Answers", AnswerSchema);

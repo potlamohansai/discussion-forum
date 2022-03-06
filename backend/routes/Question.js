@@ -23,8 +23,40 @@ router.post('/', async (req, res) => {
             })
         })
     }catch (e) {
-
+        res.status(500).send({
+            status: false,
+            message: "Error while adding question",
+        })
     }
 })
+
+
+router.get('/', async (req, res) => {
+    try {
+        await questionDB.aggregate([
+            {
+                $lookup: {
+                    from: "answers", //collection to join
+                    localField: "_id",   //field from input documnet
+                    foreignField: "questionId",
+                    as: "allAnswers",  //output array field
+                }
+            }
+        ]).exec().then((doc) => {
+            res.status(200).send(doc)
+        }).catch((error) => {
+            res.status(500).send({
+                status: false,
+                message: "unable to get the question details"
+            })
+        })
+    } catch(e) {
+        res.status(500).send({
+            status: false,
+            message: "Unexpected Error"
+        })
+    }
+})
+
 
 module.exports = router
