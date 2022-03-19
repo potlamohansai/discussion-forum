@@ -5,9 +5,12 @@ People are filled up with doubts and always search for answers throughout their 
 
 # About Project
 
-* User Able to Log In and Log Out
-* User able to ask the questions
-* User able to answer the questions
+* User can able to Log In
+* User can able to ask the questions
+* User can able to answer the questions
+* User can able to view everyone's post on landing page
+* User can able to Log Out by Clicking on Avatar
+* Swagger API documentation route : http://localhost:80/api-docs
 
 # Instructions for initializing web app:
 
