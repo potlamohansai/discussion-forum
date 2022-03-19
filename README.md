@@ -11,14 +11,14 @@ People are filled up with doubts and always search for answers throughout their 
 
 # Instructions for initializing web app:
 
-* Move inside discussion forum directory: cd discussion forum
-* Install dependencies in discussion forum directory: npm install
-* Start express server: npm start
-* Backend server will start on port no 80.
-* Now go inside frontend directory: cd frontend
-* Install dependencies in frontend directory: npm install
-* Start web app's frontend server: npm start
-* Frontend server will start on port 3000.
+* Move inside discussion forum directory: ```cd discussion forum```
+* Install dependencies in discussion forum directory: ```npm install```
+* Start express server: ```npm start```
+* Backend server will start on port no ```80```.
+* Now go inside frontend directory: ```cd frontend```
+* Install dependencies in frontend directory: ```npm install```
+* Start web app's frontend server: ```npm start```
+* Frontend server will start on port ```3000```.
 * Now open http://localhost:3000/ and proceed creating questions and answering by Logging In.
 
 
@@ -38,7 +38,7 @@ People are filled up with doubts and always search for answers throughout their 
 * react-dom
 * react-quill
 * react-redux
-* rea        ct-responsive-modal
+* react-responsive-modal
 * react-scripts
 * react-time-ago
 * web-vitals
