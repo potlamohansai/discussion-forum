@@ -1,5 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit'
 
+//Login and Logout Action controller function
+
 export const userSlice = createSlice({
     name: "user",
     initialState: {

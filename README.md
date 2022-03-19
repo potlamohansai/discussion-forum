@@ -6,7 +6,7 @@ People are filled up with doubts and always search for answers throughout their 
 # About Project
 
 * User Able to Log In and Log Out
-* User able to ask the question
+* User able to ask the questions
 * User able to answer the questions
 
 # Instructions for initializing web app:
@@ -23,7 +23,7 @@ People are filled up with doubts and always search for answers throughout their 
 * Update the dependencies in backend directory: `npm update`
 * Start the discussion-forum web app from tha main directory: `\discussion-forum> npm start`
 * Web app server will start on port no `80`.
-* Now open http://localhost:80/ and proceed creating questions and answering by Logging In.
+* Now open http://localhost:80/ and proceed creating Questions and Answers by Logging In.
 
 
 # Dependencies:

@@ -1,7 +1,10 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
 
-const answerDB = require('../models/Answer');
+const router = express.Router()
+
+const answerDB = require('../models/Answer')
+
+//Answer Post Route
 
 router.post("/", async (req, res) =>{
     try {
@@ -31,4 +34,4 @@ router.post("/", async (req, res) =>{
 });
 
 
-module.exports = router;
+module.exports = router

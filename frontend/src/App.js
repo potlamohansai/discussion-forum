@@ -1,16 +1,18 @@
 
 import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import './App.css';
+import { useDispatch, useSelector } from 'react-redux'
+import './App.css'
 import Login from './components/auth/Login'
-import Quora from "./components/Quora";
-import { login, selectUser } from './feature/userSlice';
+import Quora from "./components/Quora"
+import { login, selectUser } from './feature/userSlice'
 import { auth } from './firebase';
-import { onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged } from 'firebase/auth'
 
 function App() {
-  const user = useSelector(selectUser);
+  const user = useSelector(selectUser)
   const dispatch = useDispatch()
+
+//Authorization React Hook
 
   useEffect(() => {
     onAuthStateChanged(auth, (authUser) => {

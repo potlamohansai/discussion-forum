@@ -1,18 +1,20 @@
-//Quora header
-import React,{useState} from 'react';
-import HomeIcon from '@material-ui/icons/Home';
-import FeaturedPlayListOutlinedIcon from '@material-ui/icons/FeaturedPlayListOutlined';
-import {AssignmentTurnedInOutlined, PeopleAltOutlined, NotificationsOutlined, Search, ExpandMore,} from '@material-ui/icons';
+
+import React,{useState} from 'react'
+import HomeIcon from '@material-ui/icons/Home'
+import FeaturedPlayListOutlinedIcon from '@material-ui/icons/FeaturedPlayListOutlined'
+import {AssignmentTurnedInOutlined, PeopleAltOutlined, NotificationsOutlined, Search, ExpandMore,} from '@material-ui/icons'
 import CloseIcon from '@material-ui/icons/Close'
-import { Avatar, Button, Input } from '@material-ui/core';
+import { Avatar, Button, Input } from '@material-ui/core'
 import "./css/QuoraHeader.css"
-import {Modal} from 'react-responsive-modal';
-import 'react-responsive-modal/styles.css';
+import {Modal} from 'react-responsive-modal'
+import 'react-responsive-modal/styles.css'
 import axios from 'axios'
-import { signOut } from 'firebase/auth';
-import { auth } from '../firebase';
-import { useDispatch, useSelector } from 'react-redux';
-import { logout, selectUser } from '../feature/userSlice';
+import { signOut } from 'firebase/auth'
+import { auth } from '../firebase'
+import { useDispatch, useSelector } from 'react-redux'
+import { logout, selectUser } from '../feature/userSlice'
+
+// Navbar Component
 
 function QuoraHeader() {
 
@@ -23,6 +25,9 @@ function QuoraHeader() {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
   
+  
+//Add Question handler which is in Navbar
+
   const handleSubmit = async () => {
     if(question !== "") {
 
@@ -46,6 +51,9 @@ function QuoraHeader() {
       });
     }
   }
+
+
+  //Logout Handler when we click on Avatar in the Navbar
 
   const handleLogout = () => {
     if(window.confirm('Are you sure to logout?')) {

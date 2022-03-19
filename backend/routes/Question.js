@@ -1,7 +1,9 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
 
-const questionDB = require('../models/Question');
+const questionDB = require('../models/Question')
+
+//Questions Post Route
 
 router.post("/", async (req, res) => {
     console.log(req.body);
@@ -32,15 +34,17 @@ router.post("/", async (req, res) => {
 })
 
 
+//Questions Get Route
+
 router.get("/", async (req, res) => {
     try {
         await questionDB.aggregate([
             {
                 $lookup: {
-                    from: "answers", //collection to join
-                    localField: "_id",   //field from input documnet
+                    from: "answers",                 //collection to join
+                    localField: "_id",               //field from input documnet
                     foreignField: "questionId",
-                    as: "allAnswers",  //output array field
+                    as: "allAnswers",                //output array field
                 },
             },
         ]).exec().then((doc) => {
@@ -60,4 +64,4 @@ router.get("/", async (req, res) => {
 });
 
 
-module.exports = router;
+module.exports = router
