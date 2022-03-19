@@ -31,9 +31,10 @@ paths:
         200:
           description: "A Successful Response"
           content:
-            text/html:
+            application/json:
               schema:
                 type: object
+              example: "{}"
 
         400:
           description: "Unable to get the question details"

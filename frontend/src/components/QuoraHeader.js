@@ -133,7 +133,7 @@ function QuoraHeader() {
                           height: "40vh",
                           objectFit: "contain"
                         }}
-                          src={InputUrl} alt='displayimage'/>)}
+                          src={inputUrl} alt='displayimage'/>)}
                     </div>
                   </div>
                   <div className='modal__buttons'>
