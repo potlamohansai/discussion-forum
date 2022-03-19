@@ -45,10 +45,6 @@ function QuoraHeader() {
         alert('Error in adding question')
       });
     }
-    else {
-      console.log("hi sudheer i am hitted")
-    }
-
   }
 
   const handleLogout = () => {
@@ -60,7 +56,6 @@ function QuoraHeader() {
         console.log("Error in logout")
       })
     }
-    
   }
 
   return (
@@ -138,7 +133,7 @@ function QuoraHeader() {
                           height: "40vh",
                           objectFit: "contain"
                         }}
-                          src={inputUrl} alt='displayimage'/>)}
+                          src={InputUrl} alt='displayimage'/>)}
                     </div>
                   </div>
                   <div className='modal__buttons'>

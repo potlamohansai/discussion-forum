@@ -7,6 +7,14 @@ const PORT = 80;
 const db = require("./db")
 const router = require("./routes")
 
+//swagger
+const YAML = require("yamljs")
+const swaggerJSDocs = YAML.load("./backend/api.yaml")
+const swaggerUI = require("swagger-ui-express")
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerJSDocs))
+
+
+
 //database connection
 db.connect();
 

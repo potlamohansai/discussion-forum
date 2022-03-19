@@ -46,7 +46,7 @@ router.get("/", async (req, res) => {
         ]).exec().then((doc) => {
             res.status(200).send(doc);
         }).catch((error) => {
-            res.status(500).send({
+            res.status(400).send({
                 status: false,
                 message: "Unable to get the question details",
             });
