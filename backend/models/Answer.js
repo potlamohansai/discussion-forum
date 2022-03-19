@@ -1,4 +1,7 @@
-const mongoose = require('mongoose');
+
+const mongoose = require('mongoose')
+
+//Discussion Forum Answer Schema
 
 const AnswerSchema = new mongoose.Schema({
     answer: String,
@@ -13,4 +16,4 @@ const AnswerSchema = new mongoose.Schema({
     user: Object,   
 })
 
-module.exports = mongoose.model("Answers", AnswerSchema);
+module.exports = mongoose.model("Answers", AnswerSchema)

@@ -5,6 +5,8 @@ import Sidebar from './Sidebar'
 import Widget from './Widget'
 import './css/Quora.css'
 
+//Main Block which consists of Sidebar, Feed and Widget Components
+
 function Quora() {
   return (
     <div className= 'quora'>

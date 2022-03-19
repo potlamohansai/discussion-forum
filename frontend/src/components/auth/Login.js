@@ -3,6 +3,7 @@ import "./Login.css";
 import {signInWithPopup} from 'firebase/auth';
 import { auth, provider } from '../../firebase';
 
+//Login Page with firebase authentication
 
 function Login() {
 

@@ -1,8 +1,10 @@
 import { Avatar } from '@material-ui/core'
 import React from 'react'
-import { useSelector } from 'react-redux';
-import { selectUser } from '../feature/userSlice';
+import { useSelector } from 'react-redux'
+import { selectUser } from '../feature/userSlice'
 import './css/QuoraBox.css'
+
+//function component which is displaying above the Feed
 
 function QuoraBox() {
   const user = useSelector(selectUser);

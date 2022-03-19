@@ -4,15 +4,17 @@ import { Avatar } from '@material-ui/core'
 import { ArrowDownwardOutlined, ArrowUpwardOutlined, ChatBubbleOutlined, MoreHorizOutlined, RepeatOneOutlined, ShareOutlined } from '@material-ui/icons'
 import CloseIcon from '@material-ui/icons/Close'
 import './css/Post.css'
-import {Modal} from 'react-responsive-modal';
+import {Modal} from 'react-responsive-modal'
 import 'react-responsive-modal/styles.css'
 import ReactQuill from 'react-quill'
-import 'react-quill/dist/quill.snow.css';
-import ReactTimeAgo from "react-time-ago";
-import axios from 'axios';
-import ReactHtmlParser from 'html-react-parser';
+import 'react-quill/dist/quill.snow.css'
+import ReactTimeAgo from "react-time-ago"
+import axios from 'axios'
+import ReactHtmlParser from 'html-react-parser'
 import { useSelector } from 'react-redux'
 import { selectUser } from '../feature/userSlice'
+
+//Date Component
 
 function LastSeen({ date }) {
   return (
@@ -21,6 +23,8 @@ function LastSeen({ date }) {
     </div>
   )
 }
+
+//Post Component
 
 function Post({post}) {
   const [isModalOpen,setIsModalOpen]= useState(false);
@@ -32,6 +36,9 @@ function Post({post}) {
   const handleQuill = (value) => {
     setAnswer(value);
   }
+  
+  
+  //Function that handles Add answer
 
   const handleSubmit = async () => {
     if(post?._id && answer !== "") {
