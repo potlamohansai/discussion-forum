@@ -27,7 +27,6 @@ function App() {
   }, [dispatch]);
   return (
     <div className="App">
-      {/*<h1>This is for test</h1>*/}
       {
         user ? <Quora/> : <Login />
       }
