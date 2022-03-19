@@ -11,6 +11,8 @@ const router = require("./routes")
 const YAML = require("yamljs")
 const swaggerJSDocs = YAML.load("./backend/api.yaml")
 const swaggerUI = require("swagger-ui-express")
+
+//Swagger Route
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerJSDocs))
 
 
