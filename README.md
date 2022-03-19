@@ -11,15 +11,18 @@ People are filled up with doubts and always search for answers throughout their 
 
 # Instructions for initializing web app:
 
-* Move inside discussion forum directory: `cd discussion forum`
-* Install dependencies in discussion forum directory: `npm install`
-* Start express server: `npm start`
-* Backend server will start on port no `80`.
+* Move inside discussion-forum directory: `cd discussion forum`
+* Install dependencies in discussion-forum directory: `npm install`
+* Update the dependencies in discusiion-forum directory: `npm update`
 * Now go inside frontend directory: `cd frontend`
 * Install dependencies in frontend directory: `npm install`
+* Update the dependencies in frontend directory: `npm update`
 * Install build in frontend directory: `npm run build`
-* Start web app's frontend server: `npm start`
-* Frontend server will start on port `3000`.
+* Now go inside backend directory: `cd backend`
+* Install dependencies in backend directory: `npm install`
+* Update the dependencies in backend directory: `npm update`
+* Start the discussion-forum web app from tha main directory: `\discussion-forum> npm start`
+* Web app server will start on port no `80`.
 * Now open http://localhost:80/ and proceed creating questions and answering by Logging In.
 
 
@@ -50,4 +53,6 @@ People are filled up with doubts and always search for answers throughout their 
 * express
 * mongoose
 * nodemon
+* swagger-ui-express
+* yamljs
     
